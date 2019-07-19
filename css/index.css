@@ -296,3 +296,14 @@ a {
   width: 85%;
   height: 4rem;
 }
+.btn:hover {
+  animation: 3s linear fadein;
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
