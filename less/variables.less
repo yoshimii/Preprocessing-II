@@ -27,3 +27,67 @@
 
 @button-w: 85%;
 @button-h: 4rem;
+
+// Mobile Assignments
+
+@mobile: ~'(max-width: 500px)';
+
+//Mobile Styling
+
+@media @mobile {
+    .container {
+        
+
+        .header {
+            margin: 4rem;
+
+            .text-content {
+                padding: 0 4rem;
+                
+            }
+
+
+        }
+
+        .home {
+            .content-section {
+                flex-direction: column;
+                margin: 1.1rem 4rem;
+                
+                .text-content {
+                    width: 100%;
+
+                }
+
+                .img-content {
+                    width: 100%;
+                    // margin: auto 4rem;
+                }
+
+            }
+            .inverse-content {
+                flex-direction: column-reverse;
+                width: 100%;
+            }
+        }
+    }
+}
+
+    
+@media @mobile {
+    .container {
+        .home {
+            .content-pick {
+                flex-direction: column;
+                align-items: center;
+                padding: 1.2rem;
+
+                .destination {
+                    width: 100%;
+                    padding: 1rem 4rem;
+                }
+            }
+        }
+    }
+
+}

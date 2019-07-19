@@ -1,14 +1,35 @@
-.button-style {
-  background-color: #17A2B8;
-  border-radius: 13px;
-  height: 4rem;
-  width: 85%;
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  color: #FFFFFF;
-  font-size: 1.6rem;
-  padding: 1rem 0;
+@media (max-width: 500px) {
+  .container .header {
+    margin: 4rem;
+  }
+  .container .header .text-content {
+    padding: 0 4rem;
+  }
+  .container .home .content-section {
+    flex-direction: column;
+    margin: 1.1rem 4rem;
+  }
+  .container .home .content-section .text-content {
+    width: 100%;
+  }
+  .container .home .content-section .img-content {
+    width: 100%;
+  }
+  .container .home .inverse-content {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .container .home .content-pick {
+    flex-direction: column;
+    align-items: center;
+    padding: 1.2rem;
+  }
+  .container .home .content-pick .destination {
+    width: 100%;
+    padding: 1rem 4rem;
+  }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -264,14 +285,14 @@ a {
   font-weight: bold;
 }
 .home .content-pick .btn {
-  background-color: #17A2B8;
   border-radius: 13px;
-  height: 4rem;
-  width: 85%;
   text-align: center;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   color: #FFFFFF;
   font-size: 1.6rem;
   padding: 1rem 0;
+  background-color: #17A2B8;
+  width: 85%;
+  height: 4rem;
 }
