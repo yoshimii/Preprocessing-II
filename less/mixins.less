@@ -1,1 +1,9 @@
-// Mixins in here
+.button-style (@button-bg:@button-bg, @button-w: @button-w, @button-h: @button-h) {
+    background-color: @button-bg;
+    width: @button-w;
+    height: @button-h;    
+}
+
+.fade-in(@duration: 2s, @timing:linear, @name:fadein) {
+    animation: @duration @timing @name
+}
